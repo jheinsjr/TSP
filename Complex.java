@@ -1,35 +1,40 @@
-package Domain;
+package TSP;
 /**
  * This class represents complex numbers and will contain method to perform operations on 
  * complex numbers.
  * @author Joe Heins
  */
 public class Complex {
+	// Real and imaginary
 	private double rl;
 	private double im;
-	//Constructor with no params
+	
+	// Default Constructor
 	public Complex(){
 	}
+	
 	/**
 	 * Constructor that takes in two parameters
-	 * @param a double value that represents the real number and a double value that represents the imaginary
+	 * @param a double value that represents the real number  
+	 * @param a double value that represents the imaginary
 	 * number
 	 */
 	public Complex(double r, double i){
 		rl = r;
 		im = i;
 	}
-	//Getter for real part of complex number
+	
+	// Getter for real 
 	public double getReal(){
 		return this.rl;
 	}
 	
-	//Getter for imaginary part of complex number
+	//Getter for imaginary 
 	public double getImaginary(){
 		return this.im;
 	}
 	
-	//Adds two complex numbers
+	// Adds two complex numbers
 	public Complex add(Complex B){	
 		double a = this.rl + B.rl;
 		double b = this.im + B.im;
